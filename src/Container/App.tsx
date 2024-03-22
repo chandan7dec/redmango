@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Footer } from '../Components/Layout';
-import { Home } from '../Pages';
+import { Home, MenuItemDetails, NotFound } from '../Pages';
 import { Routes,Route } from 'react-router-dom';
 
 function App() {
@@ -10,10 +10,11 @@ function App() {
       <div className='pb-5'>
         <Routes>
           <Route path="/" element={<Home />}> </Route>
+          <Route path="*" element={<NotFound />}> </Route>
+          <Route path="/menuItemDetails/:menuItemId" element={<MenuItemDetails />}> </Route>
         </Routes>
 
       </div>
-      <Home />
       <Footer />
     </div>
   );
