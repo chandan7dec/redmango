@@ -24,9 +24,8 @@ function App() {
       <div className='pb-5'>
         <Routes>
           <Route path="/" element={<Home />}> </Route>
-          <Route path="" element={<Home />}> </Route>
           <Route path="/shoppingcart" element={<ShoppingCart />}> </Route>
-          <Route path="*" element={<NotFound />}> </Route>
+          <Route path="*" element={<Home />}> </Route>
           <Route path="/menuItemDetails/:menuItemId" element={<MenuItemDetails />}> </Route>
         </Routes>
 
