@@ -1,8 +1,16 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+import { RootState } from "../../Storage/Redux/store";
+import { cartItemModel } from '../../Interfaces';
+
 
 let logo = require("../../Assets/Images/mango.png")
 function Header() {
+  const shoppingCartFromStore : cartItemModel[] = useSelector(
+    (state: RootState) => state.shoppingCartStore.cartItems ?? []
+  )
+  
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark ">
@@ -19,8 +27,9 @@ function Header() {
           <NavLink className="nav-link " aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link " aria-current="page" to="/shoppintCart">
-            Cart <i className="bi bi-cart"></i>
+          <NavLink className="nav-link " aria-current="page" to="/shoppingCart">
+            <i className="bi bi-cart"></i>{" "}
+            {shoppingCartFromStore?.length ? `(${shoppingCartFromStore.length})` : ""}
             </NavLink>
         </li>
         
