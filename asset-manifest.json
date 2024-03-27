@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/redmango/static/css/main.9971a6d3.css",
-    "main.js": "/redmango/static/js/main.80ed8b1b.js",
+    "main.js": "/redmango/static/js/main.23e5f8f6.js",
     "static/media/bootstrap-icons.woff?": "/redmango/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/redmango/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/mango.png": "/redmango/static/media/mango.cb9d815612235b5f87c4.png",
     "index.html": "/redmango/index.html",
     "main.9971a6d3.css.map": "/redmango/static/css/main.9971a6d3.css.map",
-    "main.80ed8b1b.js.map": "/redmango/static/js/main.80ed8b1b.js.map"
+    "main.23e5f8f6.js.map": "/redmango/static/js/main.23e5f8f6.js.map"
   },
   "entrypoints": [
     "static/css/main.9971a6d3.css",
-    "static/js/main.80ed8b1b.js"
+    "static/js/main.23e5f8f6.js"
   ]
 }
