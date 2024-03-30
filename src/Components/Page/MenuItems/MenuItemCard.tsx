@@ -27,7 +27,7 @@ function MenuItemCard(props:Props) {
       updateQuantityBy: 1,
       userId: userData.id,
     });
-    console.log(response);
+    //console.log(response);
     if(response.data && response.data.isSuccess) {
       toastNotify("Item added to cart successfully!");
     }

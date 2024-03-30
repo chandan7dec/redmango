@@ -35,7 +35,7 @@ const Login = () => {
     });
 
     if(response.data) {
-      console.log(response.data);
+      //console.log(response.data);
       const {token} = response.data?.result;
       const {fullName, id, email, role} :userModel = jwt_decode(token);
       
@@ -44,7 +44,7 @@ const Login = () => {
       navigate("/"); //navigate to home page.
     }
     else if (response.error) {
-      console.log(response.error.data?.errorMessages[0]);
+      //console.log(response.error.data?.errorMessages[0]);
       setError(response.error.data?.errorMessages[0]);
     }
 
