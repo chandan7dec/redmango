@@ -8,7 +8,8 @@ import AuthenticationTest from "./AuthenticationTest";
 import AuthenticationTestadmin from "./AuthenticationTestadmin";
 import AccessDenied from "./AccessDenied";
 import Payment from "./Payment";
+import OrderConfirmed from "./Order/OrderConfirmed";
 
 
 export {Home,NotFound,MenuItemDetails,ShoppingCart,Login,Register
-,AuthenticationTest,AccessDenied,AuthenticationTestadmin, Payment};
+,AuthenticationTest,AccessDenied,AuthenticationTestadmin, Payment, OrderConfirmed};

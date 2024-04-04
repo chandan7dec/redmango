@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Header, Footer } from '../Components/Layout';
-import { AccessDenied, AuthenticationTest, AuthenticationTestadmin, Home, Login, MenuItemDetails, NotFound, Payment, Register, ShoppingCart } from '../Pages';
+import { AccessDenied, AuthenticationTest, AuthenticationTestadmin, Home, Login, MenuItemDetails, NotFound, OrderConfirmed, Payment, Register, ShoppingCart } from '../Pages';
 import { Routes,Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useGetShoppingCartQuery } from '../Apis/shoppingCartApi';
@@ -43,6 +43,7 @@ function App() {
           <Route path="/authorization" element={<AuthenticationTestadmin />}> </Route>
           <Route path="/accessDenied" element={<AccessDenied />}> </Route>
           <Route path="/payment" element={<Payment />}> </Route>
+          <Route path='/order/orderconfirmed/:id' element={<OrderConfirmed />}> </Route>
           <Route path="*" element={<Home />}> </Route>
           <Route path="/menuItemDetails/:menuItemId" element={<MenuItemDetails />}> </Route>
         </Routes>
